@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solicitud de Envío</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="main.js"></script>
+   <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="relleno">
+   <h1>Solicitud de Envío</h1>
+  
+   <form id="solicitud">
+    <label for="nombre">Nombre del Cliente:</label><br>
+    <input type="text" id="nombre" name="nombre" required><br><br>
+    
+    <label for="material">Material de la Caja:</label><br>
+      <center><select class="select" id="material" name="material">
+      <option value="madera">Madera</option>
+      <option value="carton">Cartón</option>
+      <option value="plastico">Plástico</option>
+     </center></select><br><br>
+
+    
+    <label>Dimensiones de la Caja:</label><br>
+    <input type="radio" id="pequeño" name="dimension" value="diminutas" required>
+    <label for="pequeño">Diminutas</label><br>
+    
+    <input type="radio" id="medio" name="dimension" value="medianas">
+    <label for="medio">Medianas</label><br>
+    
+    <input type="radio" id="largo" name="dimension" value="grandes">
+    <label for="largo">Grandes</label><br><br>
+    
+    <label for="comentario">Comentarios:</label><br>
+    <textarea id="comentario" name="comentario" rows="4" placeholder="Ingrese comentario si lo desea."></textarea><br><br>
+    
+    <div class="center">
+     <button type="submit">Enviar Solicitud</button><br><br>
+    </div>
+   </form>
+  </div>
+  <center><div id="resultado" ></div></center>
+</body>
+</html>

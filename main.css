@@ -1,0 +1,98 @@
+body{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: Cambria;
+    background: linear-gradient(#16A085,#060607);
+    height: 100vh;
+    font-style: italic;
+    
+}
+.relleno{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px; 
+}
+.relleno h1{
+    border-bottom: 1px solid black;
+    padding: 0 0 20px 0;
+    border-color: #16A085;
+    font-style: italic;
+}
+.select{
+    padding: 3px 40px;
+    color: #333333;
+    background-color: #eeeeee;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+.select:focus,
+.select:hover{
+    outline: none;
+    border: 1px solid black;
+}
+.select option{
+     background-color: #8ee7d5;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    background-color: rgb(18, 190, 139);
+    
+  }
+  
+  button:hover {
+    background-color: rgb(93, 209, 174);
+  }
+  
+/* Agregar animación de rotación al hacer hover */
+button:hover {
+    animation: pulseButton 0.3s infinite alternate;
+  }
+  
+  @keyframes pulseButton {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.05);
+    }
+  }
+  .center {
+    text-align: center;
+  }
+   
+  /* Estilos para el área de resultados */
+#resultado {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: black;
+    width: 700px;
+    height: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  textarea{
+    resize: none;
+    padding: 20px;
+
+  }
+  
+  
